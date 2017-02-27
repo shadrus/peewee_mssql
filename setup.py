@@ -23,8 +23,8 @@ setup(
     author='Constantin Roganov',
     author_email='rccbox@gmail.com',
     url='https://github.com/brake/peewee_mssql',
-    download_url='https://github.com/brake/peewee_mssql/archive/' + version + '.zip', 
-    keywords=['database', 'ORM', 'peewee', 'mssql'],
+    download_url='https://github.com/shadrus/peewee_mssql/archive/' + version + '.zip',
+    keywords=['database', 'ORM', 'peewee', 'mssql', 'pyodbc'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Programming Language :: Python',

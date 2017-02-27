@@ -7,7 +7,7 @@ peewee_mssqlserv
 .. image:: https://img.shields.io/badge/Python-2.7-red.svg
 
 MS SQL Support for `peewee <https://github.com/coleifer/peewee>`_, lightweight Python ORM.
-Based on `pyodbc <https://code.google.com/p/pyodbc/>`_.
+Based on `pyodbc <https://mkleehammer.github.io/pyodbc/>`_.
 
 Inspired by `this <https://github.com/coleifer/peewee/issues/122>`_ post.
 
