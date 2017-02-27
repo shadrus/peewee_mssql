@@ -121,12 +121,19 @@ class MSSQLDatabase(Database):
     commit_select = False
     compiler_class = MSSQLQueryCompiler
     field_overrides = {
-        'bool': 'BIT',
-        'double': 'DOUBLE PRECISION',
-        'float': 'FLOAT',
-        'primary_key': 'INT IDENTITY(1,1)',
-        'text': 'NTEXT',
-        'blob': 'varbinary'
+        'bool': 'tinyint',
+        'double': 'float(53)',
+        'float': 'float',
+        'int': 'int',
+        'string': 'nvarchar',
+        'fixed_char': 'nchar',
+        'text': 'nvarchar(max)',
+        'blob': 'varbinary',
+        'uuid': 'nchar(40)',
+        'primary_key': 'int identity',
+        'datetime': 'datetime2',
+        'date': 'date',
+        'time': 'time',
     }
 
     def _connect(self, database, **kwargs):
